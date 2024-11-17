@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff5cc; /* Light Cream */
+  color: #b89f5d; /* Golden */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background: #fff5e6;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #b89f5d;
+  font-weight: bold;
+}
+
+header h2 {
+  font-size: 1.5em;
+  color: #b89f5d;
+}
+
+.logo {
+  width: 150px;
+  height:150px;
+}
+
+.logo.left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.logo.right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Center alignment for the Guide button */
+.center {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Grades container with gap between buttons */
+.grades-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds gap between buttons */
+  justify-content: center;
+  padding: 40px;
+}
+
+.grades-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #b89f5d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grades-container button:hover {
+  background-color: #a3864d;
+}
+
+/* Subjects container */
+.subjects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #b89f5d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a3864d;
+}
+
+.back-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.eot-btn {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo {
+    width: 50px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header h2 {
+    font-size: 1em;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
